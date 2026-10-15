@@ -1,0 +1,4 @@
+node_modules/
+*.asar
+*.asar.original
+*.log

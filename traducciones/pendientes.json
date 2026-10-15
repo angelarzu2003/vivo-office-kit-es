@@ -1,0 +1,2918 @@
+[
+ {
+  "mod": "connection",
+  "k": "tu-pian-shi-pin-bei-fen",
+  "zh": "图片视频备份",
+  "en": "Photo & Video Backup"
+ },
+ {
+  "mod": "connection",
+  "k": "yun-lian-jie",
+  "zh": "云连接",
+  "en": "Cloud connection"
+ },
+ {
+  "mod": "connection",
+  "k": "yi-tong-guo-yun-duan-fu-wu-qi-lian-jie",
+  "zh": "已通过云端服务器连接。",
+  "en": "Connected via cloud server."
+ },
+ {
+  "mod": "connection",
+  "k": "connectOffBackingUpTips",
+  "zh": "正在备份“{0}”的图片视频，断开连接后备份将暂停。",
+  "en": "Backing up photos and videos on \"{0}\". Disconnecting will pause the backup."
+ },
+ {
+  "mod": "connection",
+  "k": "shi-yong-tipname",
+  "zh": "使用{0}",
+  "en": "Use {0}"
+ },
+ {
+  "mod": "connection",
+  "k": "useAppNeedConnectTips",
+  "zh": "使用{0}需要连接该{1}，是否连接？",
+  "en": "Using {0} requires connecting to this {1}. Connect?"
+ },
+ {
+  "mod": "connection",
+  "k": "kua-wang-yun-lian-jie",
+  "zh": "跨网云连接",
+  "en": "Cross-network cloud connection"
+ },
+ {
+  "mod": "connection",
+  "k": "cloudConnectSuccTips",
+  "zh": "手机与电脑不在同一 WLAN 网络或未打开蓝牙，已自动建立云连接。投屏等服务使用受限。可尝试 USB 或扫码连接等方式启用完整服务。",
+  "en": "The phone and computer are not on the same Wi-Fi network or Bluetooth is not on. A cloud connection has been automatically established. Screen Mirroring and other services are limited. Try USB or QR code connection for full services."
+ },
+ {
+  "mod": "connection",
+  "k": "bi-ji-lian-xu-hu-tong1",
+  "zh": "笔记连续互通",
+  "en": null
+ },
+ {
+  "mod": "connection",
+  "k": "noteRelayTips",
+  "zh": "在{0}上打开任意一篇便签，该篇便签将同步接力推送到电脑。在电脑上点击“打开”按钮，即可在电脑查看和编辑该便签。",
+  "en": "Open any note on the {0}, and it will be synced and pushed to the computer. Click \"Open\" on the computer to view and edit the note."
+ },
+ {
+  "mod": "connection",
+  "k": "appUnavailableTipsText1",
+  "zh": "电脑端办公套件登录与{1}相同的vivo账号。",
+  "en": "Sign in to the same vivo account on Office Kit on the computer as on the {1}."
+ },
+ {
+  "mod": "connection",
+  "k": "appUnavailableTipsText4",
+  "zh": "开启{0}端“自动同步便签”开关。",
+  "en": "Turn on \"Auto-sync notes\" on the {0}."
+ },
+ {
+  "mod": "connection",
+  "k": "appUnavailableTipsText5",
+  "zh": "开启平板端的“自动同步便签”开关。平板端路径：“便签”>“我的”>“自动同步便签”",
+  "en": "Turn on \"Auto-sync notes\" on the tablet. Path on tablet: Notes > Me > Auto-sync notes"
+ },
+ {
+  "mod": "connection",
+  "k": "superClipGuideText1",
+  "zh": "在平板的“设置”>“多设备互联”>“数据接力”>“剪贴板”中，开启“剪贴板”开关（若平板“多设备互联”已关闭，请先开启）。",
+  "en": "On the tablet, go to Settings > Multi-device connectivity > Data handoff > Clipboard, and turn on \"Clipboard\" (if \"Multi-device connectivity\" is off on the tablet, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "superClipGuideText3",
+  "zh": "在平板的“设置”>“连接中心”>“数据接力”>“剪贴板”，开启“剪贴板”开关（若平板“连接中心”开关已关闭，请先开启）。",
+  "en": "On the tablet, go to Settings > Connection center > Data handoff > Clipboard, and turn on \"Clipboard\" (if \"Connection center\" is off on the tablet, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "superClipGuideText5",
+  "zh": "在平板的“设置”>“多设备互联”>“数据接力”>“剪贴板”中，开启“剪贴板”开关（若平板“多设备互联”已关闭，请先开启）。",
+  "en": "On the tablet, go to Settings > Multi-device connectivity > Data handoff > Clipboard, and turn on \"Clipboard\" (if \"Multi-device connectivity\" is off on the tablet, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "superClipGuideText6",
+  "zh": "在手机的“设置”>“更多连接”>“多设备互联”>“数据接力”>“剪贴板”，开启“剪贴板”开关（若手机“多设备互联”已关闭，请先开启）。",
+  "en": "On the phone, go to Settings > More connections > Multi-device connectivity > Data handoff > Clipboard, and turn on \"Clipboard\" (if \"Multi-device connectivity\" is off on the phone, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "superClipGuideText7",
+  "zh": "在平板的“设置”>“多设备互联”>“剪贴板”中，开启“剪贴板”开关（若平板“多设备互联”已关闭，请先开启）。",
+  "en": "On the tablet, go to Settings > Multi-device connectivity > Clipboard, and turn on \"Clipboard\" (if \"Multi-device connectivity\" is off on the tablet, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "superClipGuideText8",
+  "zh": "在手机的“设置”>“其他网络与连接”>“多设备互联”>“剪贴板”，开启“剪贴板”开关（若手机“多设备互联”已关闭，请先开启）。",
+  "en": "On the phone, go to Settings > Other networks & connections > Multi-device connectivity > Clipboard, and turn on \"Clipboard\" (if \"Multi-device connectivity\" is off on the phone, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "sou-suo-lian-jie",
+  "zh": "搜索连接",
+  "en": "Search to connect"
+ },
+ {
+  "mod": "connection",
+  "k": "she-bei-zheng-zai-zhong-lian",
+  "zh": "设备正在重连",
+  "en": "Device reconnecting"
+ },
+ {
+  "mod": "connection",
+  "k": "liu-lan-qi-lian-jie-jie-li",
+  "zh": "浏览器链接接力",
+  "en": "Browser link handoff"
+ },
+ {
+  "mod": "connection",
+  "k": "backupDesc",
+  "zh": "快速备份手机图片视频",
+  "en": "Quickly back up phone photos and videos"
+ },
+ {
+  "mod": "connection",
+  "k": "backupDesc2",
+  "zh": "备份{0}的图片和视频",
+  "en": "Back up photos and videos on {0}"
+ },
+ {
+  "mod": "connection",
+  "k": "cloudConnectAuthTips",
+  "zh": "云连接状态下，为确保数据安全，请在{0}上确认访问授权。",
+  "en": "In cloud connection mode, confirm access authorization on {0} to ensure data security."
+ },
+ {
+  "mod": "connection",
+  "k": "yi-zan-ting",
+  "zh": "已暂停",
+  "en": "Paused"
+ },
+ {
+  "mod": "connection",
+  "k": "zi-dong-bei-fen",
+  "zh": "自动备份",
+  "en": "Auto-backup"
+ },
+ {
+  "mod": "connection",
+  "k": "yun-lian-jie-cheng-gong",
+  "zh": "云连接成功",
+  "en": "Cloud connection successful"
+ },
+ {
+  "mod": "connection",
+  "k": "cloudConnectSuccTIps1",
+  "zh": "{0}与电脑不在同一 WLAN 网络，为您自动建立云连接。",
+  "en": "{0} and computer are not on the same Wi-Fi network. A cloud connection has been automatically established."
+ },
+ {
+  "mod": "connection",
+  "k": "cloudConnectSuccTIps2",
+  "zh": "{0}与电脑不在同一 WLAN 网络或未打开蓝牙，为您自动建立云连接。",
+  "en": "{0} and computer are not on the same Wi-Fi network or Bluetooth is not on. A cloud connection has been automatically established."
+ },
+ {
+  "mod": "connection",
+  "k": "cloudConnectSuccTIps3",
+  "zh": "如需使用{0}等服务，可尝试 USB 连接等方式启用完整服务。",
+  "en": "To use services such as {0}, try USB connection for full services."
+ },
+ {
+  "mod": "connection",
+  "k": "tou-ping",
+  "zh": "投屏",
+  "en": "Screen Mirroring"
+ },
+ {
+  "mod": "connection",
+  "k": "bei-fen",
+  "zh": "备份",
+  "en": "Backup"
+ },
+ {
+  "mod": "connection",
+  "k": "connectCommonTIps2",
+  "zh": "请将平板与电脑接入同一 WLAN 网络，并保持平板解锁亮屏后重试。",
+  "en": "Connect the tablet and computer to the same Wi-Fi network, keep the tablet screen unlocked and on, and try again."
+ },
+ {
+  "mod": "connection",
+  "k": "sou-suo-lian-jie-shi-bai",
+  "zh": "搜索连接失败",
+  "en": "Failed to connect by searching"
+ },
+ {
+  "mod": "connection",
+  "k": "connectFailedTipsText6",
+  "zh": "请确保{0}和电脑网络正常后重试。",
+  "en": "Make sure {0} and the computer networks are working, and try again."
+ },
+ {
+  "mod": "connection",
+  "k": "toNoteEditTips",
+  "zh": "前往“便签”继续编辑",
+  "en": "Go to Notes to continue editing"
+ },
+ {
+  "mod": "connection",
+  "k": "notConnectTipsText0",
+  "zh": "完成上述操作，待\"发起连接”变成“立即连接”按钮，点击即可直接连接。",
+  "en": "After the above operations are completed and \"Initiate connection\" changes to \"Connect now\", tap it to connect directly."
+ },
+ {
+  "mod": "connection",
+  "k": "connectConflictTIps1",
+  "zh": "仅支持连接一部{0}，连接该设备将会断开电脑与“{1}”的连接，是否继续连接？",
+  "en": "Only one {0} can be connected. Connecting this device will disconnect the computer from \"{1}\". Continue?"
+ },
+ {
+  "mod": "connection",
+  "k": "usbConnectionGuideDesc1",
+  "zh": "若手机/平板系统在 OriginOS 4 以下，则前往“设置”>“系统管理”>“关于手机/关于平板电脑”>“版本信息”。",
+  "en": "If the phone/tablet system is below OriginOS 4, go to Settings > System management > About phone/About tablet > Version info."
+ },
+ {
+  "mod": "connection",
+  "k": "usbConnectionGuideDesc2",
+  "zh": "若手机/平板系统在 OriginOS 4 以下，则前往“设置”>“系统管理”>“关于手机/关于平板电脑”>“版本信息”",
+  "en": "If the phone/tablet system is below OriginOS 4, go to Settings > System management > About phone/About tablet > Version info"
+ },
+ {
+  "mod": "connection",
+  "k": "connectingConflictTipsText10",
+  "zh": "当前{0}正在连接，请稍后再发起连接。",
+  "en": "{0} is currently connecting. Try connecting again later."
+ },
+ {
+  "mod": "connection",
+  "k": "preConnectFailedReason3",
+  "zh": "设备占线，{0}已连接",
+  "en": "Device busy. {0} is connected"
+ },
+ {
+  "mod": "connection",
+  "k": "disconnectToastMsg3",
+  "zh": "“{0}”的图片视频备份已暂停。",
+  "en": "Photo & video backup on \"{0}\" has been paused."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc2",
+  "zh": "请在{0}的“设置”>“更多连接”>“连接设备服务”开启开关。",
+  "en": "Go to Settings > More connections > Device connection service on the {0} to turn on the switch."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc3",
+  "zh": "请在手机的“设置”>“更多连接”>“连接中心”>“跨设备使用”>“键鼠协同”，开启“键鼠协同”开关。（若手机“连接中心”开关已关闭，请先开启）",
+  "en": "On the phone, go to Settings > More connections > Connection center > Cross-device use > Infinite collaboration, and turn on \"Infinite collaboration\" (if \"Connection center\" is off on the phone, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc4",
+  "zh": "请在平板的“设置”>“连接中心”>“跨设备使用”>“键鼠协同”，开启“键鼠协同”开关（若平板“连接中心”开关已关闭，请先开启）。",
+  "en": "On the tablet, go to Settings > Connection center > Cross-device use > Infinite collaboration, and turn on \"Infinite collaboration\" (if \"Connection center\" is off on the tablet, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc5",
+  "zh": "请在手机的“设置”>“更多连接”>“连接中心”>“跨设备使用”>“键鼠协同”，开启“键鼠协同”开关。（若手机“连接中心”开关已关闭，请先开启）",
+  "en": "On the phone, go to Settings > More connections > Connection center > Cross-device use > Infinite collaboration, and turn on \"Infinite collaboration\" (if \"Connection center\" is off on the phone, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc6",
+  "zh": "请在平板的“设置”>“多设备互联”>“跨设备使用”>“键鼠协同”中，开启“键鼠协同”开关（若平板“多设备互联”已关闭，请先开启）。",
+  "en": "On the tablet, go to Settings > Multi-device connectivity > Cross-device use > Infinite collaboration, and turn on \"Infinite collaboration\" (if \"Multi-device connectivity\" is off on the tablet, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc7",
+  "zh": "请在手机的“设置”>“更多连接”>“多设备互联”>“跨设备使用”>“键鼠协同”，开启“键鼠协同”开关（若手机“多设备互联”已关闭，请先开启）。",
+  "en": "On the phone, go to Settings > More connections > Multi-device connectivity > Cross-device use > Infinite collaboration, and turn on \"Infinite collaboration\" (if \"Multi-device connectivity\" is off on the phone, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc8",
+  "zh": "请在平板的“设置”>“多设备互联”>“键鼠协同”中，开启“键鼠协同”开关（若平板“多设备互联”已关闭，请先开启）。",
+  "en": "On the tablet, go to Settings > Multi-device connectivity > Infinite collaboration, and turn on \"Infinite collaboration\" (if \"Multi-device connectivity\" is off on the tablet, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc9",
+  "zh": "请在手机的“设置”>“其他网络与连接”>“多设备互联”>“键鼠协同”，开启“键鼠协同”开关（若手机“多设备互联”已关闭，请先开启）。",
+  "en": "On the phone, go to Settings > Other networks & connections > Multi-device connectivity > Infinite collaboration, and turn on \"Infinite collaboration\" (if \"Multi-device connectivity\" is off on the phone, turn it on first)."
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogTitle1",
+  "zh": "{0}“连接设备服务”开关未开启",
+  "en": "\"Device connection service\" off on {0}"
+ },
+ {
+  "mod": "connection",
+  "k": "jin-yu-shou-ji-xie-tong",
+  "zh": "仅与手机协同",
+  "en": "Collaborate with phone only"
+ },
+ {
+  "mod": "connection",
+  "k": "lian-jie-ping-ban",
+  "zh": "连接平板",
+  "en": "Connect to tablet"
+ },
+ {
+  "mod": "connection",
+  "k": "jin-yu-devicetypename-xie-tong",
+  "zh": "仅与{0}协同",
+  "en": "Collaborate with {0} only"
+ },
+ {
+  "mod": "connection",
+  "k": "appStartDialogDesc13",
+  "zh": "该{0}已与{1}建立键鼠协同，是否同步连接{2}进行三端键鼠协同？",
+  "en": "{0} has established Infinite collaboration with {1}. Would you like to also connect {2} for three-way Infinite collaboration?"
+ },
+ {
+  "mod": "connection",
+  "k": "connectFailedErrorTipsText10",
+  "zh": "{0}正在连接其他电脑，请断开后重试。",
+  "en": "{0} is connecting to another computer. Disconnect and try again."
+ },
+ {
+  "mod": "connection",
+  "k": "connectFailedErrorTipsText14",
+  "zh": "该电脑正在连接平板，请稍后重新连接",
+  "en": "This computer is connecting to a tablet. Try again later"
+ },
+ {
+  "mod": "connection",
+  "k": "ping-mu-kuo-zhan-she-zhi",
+  "zh": "屏幕扩展设置",
+  "en": "Screen extension settings"
+ },
+ {
+  "mod": "connection",
+  "k": "clickAppBtnTipsTitle5",
+  "zh": "使用图片视频备份",
+  "en": "Photo & Video Backup"
+ },
+ {
+  "mod": "connection",
+  "k": "clickAppBtnTipsMsg5",
+  "zh": "使用图片视频备份需要连接该{0}，是否连接？",
+  "en": "To use Photo & Video Backup, you need to connect to this {0}. Connect?"
+ },
+ {
+  "mod": "connection",
+  "k": "vdfsAuthDialogDesc1",
+  "zh": "启用{0}，以便键鼠协同、超级剪贴板跨端传输文件。",
+  "en": "Enable {0} for Infinite collaboration and Super Clipboard to transfer files across devices."
+ },
+ {
+  "mod": "connection",
+  "k": "phone-call-process-desc-ex",
+  "zh": "手机接收到来电时，同步展示在电脑上，并可在电脑上进行接听或挂断。（仅支持vivo电话应用）",
+  "en": "Calls received on your phone are synced and displayed on your PC. You can answer or hang up on your PC. (Only supported by vivo Phone app)"
+ },
+ {
+  "mod": "connection",
+  "k": "rightMenuText2",
+  "zh": "连接其他vivo设备",
+  "en": "Connect to other vivo devices"
+ },
+ {
+  "mod": "connection",
+  "k": "yan-zheng-ma-jie-li",
+  "zh": "验证码接力",
+  "en": "Verification code handoff"
+ },
+ {
+  "mod": "connection",
+  "k": "agreePhoneCameraAuth",
+  "zh": "请在{0}同意相机授权。",
+  "en": "Allow camera access on your {0}."
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendPhoneNoSpaceFilePlural",
+  "zh": "{0}存储空间不足。 {1} 个文件发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendPhoneNoSpaceImagePlural",
+  "zh": "{0}存储空间不足。 {1} 张图片发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendCancelReceiveImageSingular",
+  "zh": "{0}已取消接收。 {1} 张图片发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessTransPhoneNoSpaceImage",
+  "zh": "{0}存储空间不足。图片传输到{1}：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromCancelAudio",
+  "zh": "已取消。来自“{0}”的音频：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendNetWorkImageSingular",
+  "zh": "网络异常。 {0} 张图片发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "ke-qian-wang-phonename-wen-jian-guan-li-android-data-tong-yi-shou-quan-hou-shua-xin",
+  "zh": "可前往{0}“文件管理”>“手机存储”>“Android”>“data”同意授权后刷新",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromNoSpaceImage",
+  "zh": "电脑存储空间不足，共需{0}。来自“{1}”的图片：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "di-zuo-wei-shou-quan-ti-shi",
+  "zh": "{0}底座未授权，授权后即可使用全局搜索功能",
+  "en": "The base service is not authorized. Authorize it to use the global search feature"
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessTransNoSpaceVideo",
+  "zh": "电脑存储空间不足，共需{0}。视频传输到电脑：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendPhoneNoSpaceAudio",
+  "zh": "{0}存储空间不足。音频发送到“{1}”：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendNetWorkVideo",
+  "zh": "网络异常。视频发送到“{0}”：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendNetWorkFile",
+  "zh": "网络异常。文件发送到“{0}”：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendCancelReceiveFileSingular",
+  "zh": "{0}已取消接收。 {1} 个文件发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendCancelReceiveAudioPlural",
+  "zh": "{0}已取消接收。 {1} 个音频发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendPhoneNoSpaceVideoPlural",
+  "zh": "{0}存储空间不足。 {1} 个视频发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromCancelSendFileSingular",
+  "zh": "{0}已取消发送。来自“{1}”的 {2} 个文件接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendCancelImage",
+  "zh": "已取消。图片发送到“{0}”：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendPhoneNoSpaceAudioPlural",
+  "zh": "{0}存储空间不足。 {1} 个音频发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendCancelReceiveAudioSingular",
+  "zh": "{0}已取消接收。 {1} 个音频发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendNetWorkAudioPlural",
+  "zh": "网络异常。 {0} 个音频发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendNetWorkVideoPlural",
+  "zh": "网络异常。 {0} 个视频发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromNoSpaceVideo",
+  "zh": "电脑存储空间不足，共需{0}。来自“{1}”的视频：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendCancelReceiveFilePlural",
+  "zh": "{0}已取消接收。 {1} 个文件发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "phonename-wen-jian-guan-li-shou-quan-hou-ke-wan-zheng-cha-kan-ci-mu-lu-de-wen-jian",
+  "zh": "{0}“文件管理”授权后，可完整查看此目录的文件",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendNetWorkAudio",
+  "zh": "网络异常。音频发送到“{0}”：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromNetWorkAudioPlural",
+  "zh": "网络异常。来自“{0}”的 {1} 个音频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendCancelReceiveVideoPlural",
+  "zh": "{0}已取消接收。 {1} 个视频发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendCancelReceiveImagePlural",
+  "zh": "{0}已取消接收。 {1} 张图片发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendCancelReceiveVideoSingular",
+  "zh": "{0}已取消接收。 {1} 个视频发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromNetWorkImageSingular",
+  "zh": "网络异常。来自“{0}”的 {1} 张图片接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromNetWorkFileSingular",
+  "zh": "网络异常。来自“{0}”的 {1} 个文件接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromCancelVideo",
+  "zh": "已取消。来自“{0}”的视频：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendCancelFile",
+  "zh": "已取消。文件发送到“{0}”：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromNetWorkAudioSingular",
+  "zh": "网络异常。来自“{0}”的 {1} 个音频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromNetWorkFilePlural",
+  "zh": "网络异常。来自“{0}”的 {1} 个文件接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendPhoneNoSpaceImageSingular",
+  "zh": "{0}存储空间不足。 {1} 张图片发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendUnKnownFileSingular",
+  "zh": "{0} 个文件发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendUnKnownAudioSingular",
+  "zh": "{0} 个音频发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendUnKnownVideoSingular",
+  "zh": "{0} 个视频发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessTransNoSpaceFile",
+  "zh": "电脑存储空间不足，共需{0}。文件传输到电脑：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessTransNoSpaceImage",
+  "zh": "电脑存储空间不足，共需{0}。图片传输到电脑：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendNetWorkVideoSingular",
+  "zh": "网络异常。 {0} 个视频发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendUnKnownImageSingular",
+  "zh": "{0} 张图片发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromUnKnownFilePlural",
+  "zh": "来自“{0}”的 {1} 个文件接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromUnKnownAudioSingular",
+  "zh": "来自“{0}”的 {1} 个音频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromUnKnownVideoPlural",
+  "zh": "来自“{0}”的 {1} 个视频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendCancelAudio",
+  "zh": "已取消。音频发送到“{0}”：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromCancelSendAudioSingular",
+  "zh": "{0}已取消发送。来自“{1}”的 {2} 个音频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromNetWorkImage",
+  "zh": "网络异常。来自“{0}”的图片：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendNetWorkFilePlural",
+  "zh": "网络异常。 {0} 个文件发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessTransPhoneNoSpaceFile",
+  "zh": "{0}存储空间不足。文件传输到{1}：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendPhoneNoSpaceAudioSingular",
+  "zh": "{0}存储空间不足。 {1} 个音频发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendNetWorkImage",
+  "zh": "网络异常。图片发送到“{0}”：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromCancelImage",
+  "zh": "已取消。来自“{0}”的图片：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromUnKnownImageSingular",
+  "zh": "来自“{0}”的 {1} 张图片接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendNetWorkFileSingular",
+  "zh": "网络异常。 {0} 个文件发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromCancelSendAudioPlural",
+  "zh": "{0}已取消发送。来自“{1}”的 {2} 个音频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromNetWorkVideoPlural",
+  "zh": "网络异常。来自“{0}”的 {1} 个视频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromCancelSendFilePlural",
+  "zh": "{0}已取消发送。来自“{1}”的 {2} 个文件接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendUnKnownFilePlural",
+  "zh": "{0} 个文件发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessTransNoSpaceAudio",
+  "zh": "电脑存储空间不足，共需{0}。音频传输到电脑：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromNoSpaceFile",
+  "zh": "电脑存储空间不足，共需{0}。来自“{1}”的文件：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendNetWorkAudioSingular",
+  "zh": "网络异常。 {0} 个音频发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendPhoneNoSpaceImage",
+  "zh": "{0}存储空间不足。图片发送到“{1}”：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendPhoneNoSpaceFile",
+  "zh": "{0}存储空间不足。文件发送到“{1}”：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendCancelVideo",
+  "zh": "已取消。视频发送到“{0}”：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromNetWorkVideo",
+  "zh": "网络异常。来自“{0}”的视频：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromCancelFile",
+  "zh": "已取消。来自“{0}”的文件：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromNetWorkAudio",
+  "zh": "网络异常。来自“{0}”的音频：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromCancelSendImagePlural",
+  "zh": "{0}已取消发送。来自“{1}”的 {2} 张图片接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromCancelSendImageSingular",
+  "zh": "{0}已取消发送。来自“{1}”的 {2} 张图片接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromNetWorkVideoSingular",
+  "zh": "网络异常。来自“{0}”的 {1} 个视频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromUnKnownAudioPlural",
+  "zh": "来自“{0}”的 {1} 个音频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromUnKnownImagePlural",
+  "zh": "来自“{0}”的 {1} 张图片接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendUnKnownImagePlural",
+  "zh": "{0} 张图片发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendNetWorkImagePlural",
+  "zh": "网络异常。 {0} 张图片发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendPhoneNoSpaceVideoSingular",
+  "zh": "{0}存储空间不足。 {1} 个视频发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromNoSpaceAudio",
+  "zh": "电脑存储空间不足，共需{0}。来自“{1}”的音频：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromCancelSendVideoSingular",
+  "zh": "{0}已取消发送。来自“{1}”的 {2} 个视频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromCancelSendVideoPlural",
+  "zh": "{0}已取消发送。来自“{1}”的 {2} 个视频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromNetWorkImagePlural",
+  "zh": "网络异常。来自“{0}”的 {1} 张图片接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromUnKnownFileSingular",
+  "zh": "来自“{0}”的 {1} 个文件接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendUnKnownAudioPlural",
+  "zh": "{0} 个音频发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessTransPhoneNoSpaceVideo",
+  "zh": "{0}存储空间不足。视频传输到{1}：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessTransPhoneNoSpaceAudio",
+  "zh": "{0}存储空间不足。音频传输到{1}：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessSendPhoneNoSpaceVideo",
+  "zh": "{0}存储空间不足。视频发送到“{1}”：成功 {2} 个，失败 {3} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendPhoneNoSpaceFileSingular",
+  "zh": "{0}存储空间不足。 {1} 个文件发送到“{2}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSendUnKnownVideoPlural",
+  "zh": "{0} 个视频发送到“{1}”失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailFromUnKnownVideoSingular",
+  "zh": "来自“{0}”的 {1} 个视频接收失败。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "FailSuccessFromNetWorkFile",
+  "zh": "网络异常。来自“{0}”的文件：成功 {1} 个，失败 {2} 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "ping-ban",
+  "zh": "平板",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "chuan-shu-shou-xian",
+  "zh": "传输受限",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-7",
+  "zh": "云连接状态下，传输文件到第三方应用服务受限，如需继续操作，请将该文件保存至电脑后导入至第三方应用。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-2",
+  "zh": "当前处于云连接状态，仅支持传输 {0} 以下的文件，如需传输“{1}”，请使用 USB 连接该设备。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "liu-liang-ti-xing",
+  "zh": "{0}流量提醒",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-3",
+  "zh": "当前处于云连接状态，每日传输数据限额为 {0}（当前剩余 {1}），不足以查看该文件。如需继续查看，请使用 USB 连接该设备。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-4",
+  "zh": "当前处于云连接状态，每日传输数据限额为 {0}（当前剩余 {1}），不足以传输所选文件。如需继续传输，请使用 USB 连接该设备。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-5",
+  "zh": "当前{0}处于移动数据网络环境，云连接状态下查看该文件将消耗{1} {2} 数据流量，是否继续查看？",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-6",
+  "zh": "当前{0}处于移动数据网络环境，云连接状态下传输所选文件将消耗{1} {2} 数据流量，是否继续传输？",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "xuan-ze-wen-jian-tai-duo-wu-fa-jin-hang-yun-chuan",
+  "zh": "选择文件过多，无法进行云传输",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-10",
+  "zh": "当前处于云连接状态，每次传输至{0}的文件最多为 500 个。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "ru-xu-ji-xu-chuan-shu-qing-shi-yong-usb-lian-jie-gai-she-bei",
+  "zh": "如需继续传输，请使用 USB 连接该设备。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "ru-xu-ji-xu-chuan-shu-qing-shi-yong-usb-lian-jie-gai-she-bei-2",
+  "zh": "如需继续传输，请使用 USB 连接该设备，并通过点击“保存至电脑”按钮进行传输。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "usb-lian-jie",
+  "zh": "USB连接",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-8",
+  "zh": "当前处于云连接状态，仅支持查看 {0} 以下的文件，如需访问较大文件，请使用 USB 连接该设备。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-9",
+  "zh": "当前处于云连接状态，仅支持传输 {0} 以下文件，如需传输较大文件，请使用 USB 连接该设备。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "wen-jian-guo-da",
+  "zh": "文件过大",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "bu-fen-wen-jian-guo-da",
+  "zh": "部分文件过大",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "chuan-shu-qi-yu-wen-jian",
+  "zh": "传输其余文件",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "chao-guo-chuan-shu-xian-liang",
+  "zh": "超过传输限量",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "jin-ri-bu-zai-ti-shi",
+  "zh": "今日不再提示",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "ji-xu-isopenfile",
+  "zh": "继续查看",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "ji-xu-isopenfile2",
+  "zh": "继续传输",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "chuan-shu-dao-shou-ji-ping-ban-noex",
+  "zh": "传输到手机/平板",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "que-ding-qing-kong-chuan-shu-dao-shou-ji-ping-ban-de-quan-bu-ji-lu-ma-noex",
+  "zh": "确定清空传输到手机/平板的全部记录吗？",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "xiu-gai-shi-bai-reason",
+  "zh": "修改失败，{0}",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-tip-1",
+  "zh": "当前处于云连接状态，仅支持传输 {0} 以下的文件，如需传输“{1}”等 {2} 个较大文件，请使用 USB 连接该设备。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "ai-zhi-neng-shi-bie",
+  "zh": "AI 智能识别",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "dui-fang-yi-ju-jue",
+  "zh": "对方已拒绝",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "qing-qiu-yi-chao-shi",
+  "zh": "请求已超时",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "qian-wang-devicephonename-que-ren",
+  "zh": "前往{0}确认",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "qing-zai-devicephonename-shang-dian-ji-yun-xu",
+  "zh": "请在{0}上点击“允许”",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yun-lian-jie-quan-sou",
+  "zh": "云连接状态下，为确保数据安全，请在{0}上确认访问授权后才可搜索。",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "office-kits-file-transfer",
+  "zh": "vivo办公套件文件传输",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "qing-qian-wang-phonename-wen-jian-guan-li-shou-quan",
+  "zh": "请前往{0}“文件管理”授权",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "xi-tong-mu-lu-wen-jian-jia-bu-zhi-chi-cao-zuo",
+  "zh": "系统目录文件夹不支持操作",
+  "en": null
+ },
+ {
+  "mod": "fileManager",
+  "k": "yin-android-quan-xian-xian-zhi-zan-bu-zhi-chi-ci-gong-neng",
+  "zh": "因Android权限限制，暂不支持此功能",
+  "en": null
+ },
+ {
+  "mod": "framework",
+  "k": "searchTablTitle14",
+  "zh": "含有",
+  "en": null
+ },
+ {
+  "mod": "framework",
+  "k": "searchTablTitle15",
+  "zh": "的便签",
+  "en": null
+ },
+ {
+  "mod": "framework",
+  "k": "cross-device-connect",
+  "zh": "跨设备互联",
+  "en": null
+ },
+ {
+  "mod": "framework",
+  "k": "mirror-fm-coor",
+  "zh": "镜像投屏、跨端管理传输文件，协同更流畅",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "deviceSourceFormat",
+  "zh": "来自 {0}",
+  "en": "From {0}"
+ },
+ {
+  "mod": "note",
+  "k": "historyListTopHint",
+  "zh": "可查看最近{0}天内（至多{1}条）的历史编辑记录。",
+  "en": "View up to {1} revisions from the last {0} days."
+ },
+ {
+  "mod": "note",
+  "k": "saveAsNewNoteAction",
+  "zh": "另存为新笔记",
+  "en": "Save as new note"
+ },
+ {
+  "mod": "note",
+  "k": "cloudStorageFullText",
+  "zh": "云空间已满，暂停同步历史版本。{0}",
+  "en": "Cloud storage full. Version history sync paused. {0}"
+ },
+ {
+  "mod": "note",
+  "k": "restoredVersionLabel",
+  "zh": "还原版本",
+  "en": "Restored version"
+ },
+ {
+  "mod": "note",
+  "k": "historyVersionTitle",
+  "zh": "历史版本",
+  "en": "Version history"
+ },
+ {
+  "mod": "note",
+  "k": "restoreSuccessToast",
+  "zh": "已还原至当前版本",
+  "en": "Current version restored"
+ },
+ {
+  "mod": "note",
+  "k": "deleteSingleTodoFromCloudTitle",
+  "zh": "从{0}中永久删除此文档？",
+  "en": "Permanently delete this document from {0}?"
+ },
+ {
+  "mod": "note",
+  "k": "FvAtomicNotesDataStorageWarning",
+  "zh": "该路径存储了原子便签数据，请勿随意删除，若删除可能会导致应用内容丢失。",
+  "en": "Origin Notes data is stored in this location. Delete with caution. Deleting it may cause app data loss."
+ },
+ {
+  "mod": "note",
+  "k": "FvNoteAIWaitingTip1",
+  "zh": "小V写作中，无法编辑便签",
+  "en": "Can't edit note during AI Creation"
+ },
+ {
+  "mod": "note",
+  "k": "FvTodoRepeatRemindDialogText",
+  "zh": "新版本待办支持设置重复提醒，仅可在高于v5.1版本的原子便签上查看和使用。",
+  "en": "With the latest version, you can set up repeating reminders for to-dos. The feature is available with Origin Notes later than v5.1."
+ },
+ {
+  "mod": "note",
+  "k": "FvNoteToolbarImgMenuDialogTip3",
+  "zh": "设备原子便签版本过低，暂不支持该功能",
+  "en": "The device's Origin Notes version is too low to support this feature"
+ },
+ {
+  "mod": "note",
+  "k": "FvAtomicNoteSaveFailed",
+  "zh": "保存到原子便签失败",
+  "en": "Failed to save to Origin Notes"
+ },
+ {
+  "mod": "note",
+  "k": "FvNoteGuideText1",
+  "zh": "欢迎来到原子便签",
+  "en": "Welcome to Origin Notes"
+ },
+ {
+  "mod": "note",
+  "k": "FvAtomicNotes",
+  "zh": "原子便签",
+  "en": "Origin Notes"
+ },
+ {
+  "mod": "note",
+  "k": "DefaultFontSizeForNotes",
+  "zh": "笔记默认字号",
+  "en": "Default font size"
+ },
+ {
+  "mod": "note",
+  "k": "NoteShortcuts",
+  "zh": "笔记快捷键",
+  "en": "Shortcuts"
+ },
+ {
+  "mod": "note",
+  "k": "EditNote",
+  "zh": "编辑笔记",
+  "en": "Edit notes"
+ },
+ {
+  "mod": "note",
+  "k": "DisplayEncryptedNotesInEncryptedCategoryAndOriginalFolder",
+  "zh": "在“已加密笔记”分类和原文件夹中均可显示加密笔记",
+  "en": "Show encrypted notes in both the \"Encrypted notes\" category and the original folder"
+ },
+ {
+  "mod": "note",
+  "k": "EncryptedNotesDisplaySettings",
+  "zh": "加密笔记显示设置",
+  "en": "Encrypted note display settings"
+ },
+ {
+  "mod": "note",
+  "k": "DisplayEncryptedNotesOnlyInEncryptedCategory",
+  "zh": "仅在“已加密笔记”分类中显示加密笔记",
+  "en": "Show encrypted notes in the \"Encrypted notes\" category only"
+ },
+ {
+  "mod": "note",
+  "k": "ShowWordCountInNoteContentPage",
+  "zh": "笔记内容页面显示字数",
+  "en": "Show word count in note"
+ },
+ {
+  "mod": "note",
+  "k": "DeletedNotes",
+  "zh": "删除的笔记",
+  "en": "Deleted notes"
+ },
+ {
+  "mod": "note",
+  "k": "FontSizeSettingAppliesToNewNotesOnly",
+  "zh": "此设置仅在新建笔记时生效，对已有笔记不影响。",
+  "en": "This setting will only take effect on new notes."
+ },
+ {
+  "mod": "note",
+  "k": "monthlyUsageLimitReached",
+  "zh": "本月使用次数已达上限1000次",
+  "en": "Usage for this month reached the limit of 1,000"
+ },
+ {
+  "mod": "note",
+  "k": "audioTimeLimited",
+  "zh": "本月转文本上限已达到上限100小时",
+  "en": "Reached text conversion limit of 100 hours for this month"
+ },
+ {
+  "mod": "note",
+  "k": "noteToolbarInfoDialogTip2",
+  "zh": "现在只需再执行{0}步即可查询笔记标识",
+  "en": "Only {0} more step to search for note identifier"
+ },
+ {
+  "mod": "note",
+  "k": "notesMovedToTitle1",
+  "zh": "已将{0}条笔记移动到“{1}”",
+  "en": "{0} notes moved to \"{1}\""
+ },
+ {
+  "mod": "note",
+  "k": "notesMovedToTitle",
+  "zh": "已将{0}条笔记移动到“{1}”",
+  "en": "{0} note moved to \"{1}\""
+ },
+ {
+  "mod": "note",
+  "k": "uploadCompleteAutoClose",
+  "zh": "笔记内容上传完成后，会自动关闭弹框，请稍候",
+  "en": "The pop-up will close automatically after the note content is uploaded. Please wait"
+ },
+ {
+  "mod": "note",
+  "k": "newFormatNotePcDeletionAlert",
+  "zh": "所选笔记中的新格式笔记暂无法在电脑端删除。",
+  "en": "Notes in new formats in the selected notes cannot be deleted from the computer."
+ },
+ {
+  "mod": "note",
+  "k": "moveToRecentDeleteNotice",
+  "zh": "所选笔记将移至“最近删除”并保留60天。",
+  "en": "The selected notes will be moved to \"Recently deleted\" and kept for 60 days."
+ },
+ {
+  "mod": "note",
+  "k": "noteToolbarSearchReplaceTip1",
+  "zh": "笔记中不支持替换附件名称",
+  "en": "You cannot replace attachment names in Notes"
+ },
+ {
+  "mod": "note",
+  "k": "noteTask3",
+  "zh": "笔记小V写作",
+  "en": "AI Creation for notes"
+ },
+ {
+  "mod": "note",
+  "k": "confirmLocalDeletion2",
+  "zh": "确定删除所选的{0}篇笔记吗？",
+  "en": "Delete the selected {0} notes?"
+ },
+ {
+  "mod": "note",
+  "k": "emptyHandwritingNote",
+  "zh": "手写笔记内容为空",
+  "en": "Empty handwritten note"
+ },
+ {
+  "mod": "note",
+  "k": "encryptionPasswordPrompt",
+  "zh": "如需对笔记进行加密，请输入vivo账号“{0}”的密码进行验证。",
+  "en": "To encrypt the note, enter the password of the vivo account \"{0}\" for verification."
+ },
+ {
+  "mod": "note",
+  "k": "noteCreationFailed",
+  "zh": "创建笔记失败",
+  "en": "Failed to create note"
+ },
+ {
+  "mod": "note",
+  "k": "higherVersionNoteAlert",
+  "zh": "此笔记为更高版本数据，暂不支持展示",
+  "en": "The note cannot be displayed because it contains data from a later version"
+ },
+ {
+  "mod": "note",
+  "k": "confirmAbandonDraft",
+  "zh": "小V写作正在进行中，是否放弃本次创作内容？",
+  "en": "AI Creation in progress. Discard this created content?"
+ },
+ {
+  "mod": "note",
+  "k": "saveCompleteAutoClose",
+  "zh": "笔记内容保存完成后，会自动关闭弹框，请稍候",
+  "en": "The pop-up will close automatically after the note content is saved. Please wait"
+ },
+ {
+  "mod": "note",
+  "k": "saveAsNewNote",
+  "zh": "保存到新笔记",
+  "en": "Save to new note"
+ },
+ {
+  "mod": "note",
+  "k": "noteAIWaitingTip1",
+  "zh": "小V写作中，无法编辑笔记",
+  "en": "AI Creation in progress. Cannot edit note"
+ },
+ {
+  "mod": "note",
+  "k": "noteTask5",
+  "zh": "删除空笔记",
+  "en": "Delete empty note"
+ },
+ {
+  "mod": "note",
+  "k": "noteGuideText1",
+  "zh": "欢迎来到原子笔记",
+  "en": "Welcome to Origin Notes"
+ },
+ {
+  "mod": "note",
+  "k": "noteDefaultNameAudio",
+  "zh": "音频笔记",
+  "en": "Audio note"
+ },
+ {
+  "mod": "note",
+  "k": "noteDefaultNameVedio",
+  "zh": "视频笔记",
+  "en": "Video note"
+ },
+ {
+  "mod": "note",
+  "k": "noteDefaultNameEncryption",
+  "zh": "加密笔记",
+  "en": "Encrypted note"
+ },
+ {
+  "mod": "note",
+  "k": "noteType3",
+  "zh": "冲突笔记",
+  "en": "Note conflict"
+ },
+ {
+  "mod": "note",
+  "k": "noteType2",
+  "zh": "新格式笔记",
+  "en": "Note in new format"
+ },
+ {
+  "mod": "note",
+  "k": "noteHeightLimitWarning",
+  "zh": "当前笔记超出最大高度限制，可能导致部分内容无法正常显示。",
+  "en": "This note exceeds the maximum height limit. Some content may not display properly."
+ },
+ {
+  "mod": "note",
+  "k": "todoChangeColorTitle",
+  "zh": "更换颜色",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "audioConversionMonthlyLimit",
+  "zh": "本月转文本上限已达到上限100小时",
+  "en": "Reached text conversion limit of 100 hours for this month"
+ },
+ {
+  "mod": "note",
+  "k": "noteToolbarInfoDialogComplexTip2",
+  "zh": "现在只需再执行{0}步即可查询笔记标识",
+  "en": "Only {0} more steps to search for note identifier"
+ },
+ {
+  "mod": "note",
+  "k": "confirmCloudLocalDeletion1",
+  "zh": "确定从本地及云端删除所选的{0}篇笔记吗？",
+  "en": "Delete the selected {0} note from the local device and the cloud?"
+ },
+ {
+  "mod": "note",
+  "k": "decryptionPasswordPrompt",
+  "zh": "如需对笔记进行解密，请输入vivo账号“{0}”的密码进行验证。",
+  "en": "To decrypt the note, enter the password of the vivo account \"{0}\" for verification."
+ },
+ {
+  "mod": "note",
+  "k": "handwritingLoading",
+  "zh": "手写笔记正在加载",
+  "en": "Loading handwritten notes"
+ },
+ {
+  "mod": "note",
+  "k": "accountVerificationText",
+  "zh": "如需查看笔记内容，可通过账号密码验证后查看。",
+  "en": "To view the note content, verify your account and password."
+ },
+ {
+  "mod": "note",
+  "k": "encryptedTextContent",
+  "zh": "此笔记已被加密",
+  "en": "This note is encrypted"
+ },
+ {
+  "mod": "note",
+  "k": "audioSummaryAbandonWarning",
+  "zh": "笔记内有录音正在AI总结，离开笔记后将会放弃此次总结。",
+  "en": "AI is summarizing recording in this note. Leaving the note will discard this summary."
+ },
+ {
+  "mod": "note",
+  "k": "contentExceedsLimitWarning",
+  "zh": "小V写作的内容插入后将会超出笔记最大字数上限，无法保存到笔记中。",
+  "en": "After the content created by AI Creation is inserted, the maximum character limit of the note will be reached and the content cannot be saved to the note."
+ },
+ {
+  "mod": "note",
+  "k": "noteCharacterLimitReached",
+  "zh": "笔记已达最大字数",
+  "en": "Note character limit reached"
+ },
+ {
+  "mod": "note",
+  "k": "noteToolbarSearchPlaceholder",
+  "zh": "在当前笔记内查找",
+  "en": "Find in the current note"
+ },
+ {
+  "mod": "note",
+  "k": "noteToolbarAIGuideDialogText2",
+  "zh": "基于主题快速写笔记：选择模板指令或自定义指令即可在笔记中自动生成相关内容。",
+  "en": "Quickly write notes based on theme: Choose from template commands or custom commands to automatically generate relevant content in your notes."
+ },
+ {
+  "mod": "note",
+  "k": "noteAIWaitingTip2",
+  "zh": "请先确认小V写作生成的内容",
+  "en": "Confirm content generated by AI Creation first"
+ },
+ {
+  "mod": "note",
+  "k": "noteTaskDialogText1",
+  "zh": "未保存的任务：笔记涂鸦",
+  "en": "Unsaved task: note doodle"
+ },
+ {
+  "mod": "note",
+  "k": "noteInsertContentTip4",
+  "zh": "小V写作后可插入",
+  "en": "Insert after using AI Creation"
+ },
+ {
+  "mod": "note",
+  "k": "noteInsertContentTip1",
+  "zh": "请打开一篇笔记后插入",
+  "en": "Open a note and insert"
+ },
+ {
+  "mod": "note",
+  "k": "noteType1",
+  "zh": "手写笔记",
+  "en": "Handwritten note"
+ },
+ {
+  "mod": "note",
+  "k": "noteHomeEmptyText",
+  "zh": "新建笔记，高效记录协同",
+  "en": "Create notes for efficient recording and collaboration"
+ },
+ {
+  "mod": "note",
+  "k": "scheduleEmptyText",
+  "zh": "无日程",
+  "en": "No events"
+ },
+ {
+  "mod": "note",
+  "k": "noteDefaultNameRecord",
+  "zh": "录音笔记",
+  "en": "Recording note"
+ },
+ {
+  "mod": "note",
+  "k": "maxTwoTagsPerNote",
+  "zh": "单条笔记最多可添加2个标签",
+  "en": "Up to two tags can be added to one note"
+ },
+ {
+  "mod": "note",
+  "k": "deleteFolderOnly",
+  "zh": "仅删除文件夹，保留笔记",
+  "en": "Delete folder but keep notes"
+ },
+ {
+  "mod": "note",
+  "k": "noteToolbarScreenshotMenuDialogBtn2",
+  "zh": "截屏并隐藏笔记窗口",
+  "en": "Screenshot and hide Notes window"
+ },
+ {
+  "mod": "note",
+  "k": "noteToolbarAIGuideDialogText1",
+  "zh": "对已有笔记处理：只需要选中文字即可对笔记内容进行智能修改或继续创作。",
+  "en": "Handle existing notes: Simply select the text to intelligently modify or continue creating note content."
+ },
+ {
+  "mod": "note",
+  "k": "noteExportDialogTitle",
+  "zh": "笔记导出",
+  "en": "Note export"
+ },
+ {
+  "mod": "note",
+  "k": "noteDefaultNameDoc",
+  "zh": "文档笔记",
+  "en": "Document note"
+ },
+ {
+  "mod": "note",
+  "k": "noteDefaultNameImage",
+  "zh": "图片笔记",
+  "en": "Image note"
+ },
+ {
+  "mod": "note",
+  "k": "recoverSuccessTip3",
+  "zh": "已恢复1篇笔记",
+  "en": "One note restored"
+ },
+ {
+  "mod": "note",
+  "k": "monthlyLimitReached",
+  "zh": "本月使用次数已达上限1000次",
+  "en": "Usage for this month reached the limit of 1,000"
+ },
+ {
+  "mod": "note",
+  "k": "confirmCloudLocalDeletion2",
+  "zh": "确定从本地及云端删除所选的{0}篇笔记吗？",
+  "en": "Delete the selected {0} notes from the local device and the cloud?"
+ },
+ {
+  "mod": "note",
+  "k": "confirmLocalDeletion1",
+  "zh": "确定删除所选的{0}篇笔记吗？",
+  "en": "Delete the selected {0} note?"
+ },
+ {
+  "mod": "note",
+  "k": "newFormatNoteManagementTip",
+  "zh": "新格式笔记暂无法在电脑端删除，可前往“未分类笔记”分类中查看和管理笔记。",
+  "en": "Notes in new formats cannot be deleted on the computer. You can view and manage them in \"Uncategorized notes\"."
+ },
+ {
+  "mod": "note",
+  "k": "maxCharacterLimitReached",
+  "zh": "已达到最大字数，超出内容将无法保存到笔记",
+  "en": "Character limit reached. Excessive content cannot be saved to the note"
+ },
+ {
+  "mod": "note",
+  "k": "audioConversionWarning",
+  "zh": "笔记内有录音正在转写文本，离开笔记后将会放弃此次转写。",
+  "en": "Transcribing recording into text in the note. Leaving the note will discard this transcription."
+ },
+ {
+  "mod": "note",
+  "k": "deleteFolderWithNotes",
+  "zh": "删除文件夹和笔记",
+  "en": "Delete folder and notes"
+ },
+ {
+  "mod": "note",
+  "k": "confirmSingleCloudLocalDelete",
+  "zh": "确定从本地及云端删除此笔记吗？",
+  "en": "Delete this note from the local device and the cloud?"
+ },
+ {
+  "mod": "note",
+  "k": "noteTaskDialogText2",
+  "zh": "未保存的任务：笔记录音",
+  "en": "Unsaved task: note recording"
+ },
+ {
+  "mod": "note",
+  "k": "noteTask2",
+  "zh": "笔记录音任务",
+  "en": "Note recording task"
+ },
+ {
+  "mod": "note",
+  "k": "noteTask1",
+  "zh": "笔记跨端任务",
+  "en": "Cross-device note tasks"
+ },
+ {
+  "mod": "note",
+  "k": "noteInsertContentTip3",
+  "zh": "当前笔记格式无法插入",
+  "en": "The current note format does not support insertion"
+ },
+ {
+  "mod": "note",
+  "k": "noteListEncryptionBtn",
+  "zh": "已加密笔记",
+  "en": "Encrypted notes"
+ },
+ {
+  "mod": "note",
+  "k": "noteToolbarShareTo",
+  "zh": "分享",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "exportStageGenerating",
+  "zh": "正在生成文件...",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "exportStageRendering",
+  "zh": "正在排版...",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "exportStageWriting",
+  "zh": "正在保存到本地...",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "todoMoveToCalendar",
+  "zh": "待办及数据已迁移至\"日历\"",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "todoMoveToCalendarDesc",
+  "zh": "在\"日历\"集中管理日程和待办，更高效。",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "goToCalendar",
+  "zh": "去日历查看",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "viewDetails",
+  "zh": "查看详情",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "notShow",
+  "zh": "不再提示",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "noteHistoryAsNewLoading",
+  "zh": "正在保存",
+  "en": null
+ },
+ {
+  "mod": "note",
+  "k": "CliStatusLabel",
+  "zh": "Notes CLI 服务",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "searchResultsCount",
+  "zh": "{0}/{1}",
+  "en": "{0}/{1}"
+ },
+ {
+  "mod": "record",
+  "k": "noResults",
+  "zh": "无结果",
+  "en": "No results"
+ },
+ {
+  "mod": "record",
+  "k": "inputReplacementContent",
+  "zh": "输入替换内容",
+  "en": "Enter content to replace with"
+ },
+ {
+  "mod": "record",
+  "k": "replace",
+  "zh": "替换",
+  "en": "Replace"
+ },
+ {
+  "mod": "record",
+  "k": "usageReminder",
+  "zh": "使用提醒",
+  "en": "Reminder"
+ },
+ {
+  "mod": "record",
+  "k": "requestTimeoutRetryLater",
+  "zh": "请求超时，请稍后再试",
+  "en": "Request timed out. Try again later"
+ },
+ {
+  "mod": "record",
+  "k": "networkDisconnected",
+  "zh": "网络未连接",
+  "en": "No network connection"
+ },
+ {
+  "mod": "record",
+  "k": "stopGenerating",
+  "zh": "停止生成",
+  "en": "Stop generating"
+ },
+ {
+  "mod": "record",
+  "k": "copyAllText",
+  "zh": "复制全文",
+  "en": "Copy all text"
+ },
+ {
+  "mod": "record",
+  "k": "nextOccurrence",
+  "zh": "（{0}/{1}）下一处",
+  "en": "({0}/{1}) Next part"
+ },
+ {
+  "mod": "record",
+  "k": "pleaseWait",
+  "zh": "请稍等…",
+  "en": "Please wait…"
+ },
+ {
+  "mod": "record",
+  "k": "generating",
+  "zh": "正在生成…",
+  "en": "Generating…"
+ },
+ {
+  "mod": "record",
+  "k": "dontSave",
+  "zh": "不保存",
+  "en": "Do not save"
+ },
+ {
+  "mod": "record",
+  "k": "paste",
+  "zh": "粘贴",
+  "en": "Paste"
+ },
+ {
+  "mod": "record",
+  "k": "done",
+  "zh": "完成",
+  "en": "Done"
+ },
+ {
+  "mod": "record",
+  "k": "everyone",
+  "zh": "所有人",
+  "en": "Everyone"
+ },
+ {
+  "mod": "record",
+  "k": "replaceCurrentOnly",
+  "zh": "仅替换当前名称",
+  "en": "Only replace current name"
+ },
+ {
+  "mod": "record",
+  "k": "speakerSwitched",
+  "zh": "当前扬声器切换为“{0}”",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "voiceEnhancement",
+  "zh": "人声增强",
+  "en": "Vocal enhancement"
+ },
+ {
+  "mod": "record",
+  "k": "normal",
+  "zh": "正常",
+  "en": "Normal"
+ },
+ {
+  "mod": "record",
+  "k": "playbackSpeed",
+  "zh": "播放速度",
+  "en": "Playback speed"
+ },
+ {
+  "mod": "record",
+  "k": "delete",
+  "zh": "删除",
+  "en": "Delete"
+ },
+ {
+  "mod": "record",
+  "k": "replaceImage",
+  "zh": "替换图片",
+  "en": "Replace images"
+ },
+ {
+  "mod": "record",
+  "k": "imageNote",
+  "zh": "图片备注",
+  "en": "Add image note"
+ },
+ {
+  "mod": "record",
+  "k": "clickAiSummary",
+  "zh": "点击“AI总结”开启总结录音内容",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "noText",
+  "zh": "无文本",
+  "en": "No text"
+ },
+ {
+  "mod": "record",
+  "k": "text",
+  "zh": "文本",
+  "en": "Text"
+ },
+ {
+  "mod": "record",
+  "k": "fileInfo",
+  "zh": "文件信息",
+  "en": "File info"
+ },
+ {
+  "mod": "record",
+  "k": "rename",
+  "zh": "重命名",
+  "en": "Rename"
+ },
+ {
+  "mod": "record",
+  "k": "replaceAll",
+  "zh": "全部替换",
+  "en": "Replace all"
+ },
+ {
+  "mod": "record",
+  "k": "contentCannotProcess",
+  "zh": "内容无法处理",
+  "en": "Content cannot be processed"
+ },
+ {
+  "mod": "record",
+  "k": "findOrReplace",
+  "zh": "查找或替换",
+  "en": "Find or replace"
+ },
+ {
+  "mod": "record",
+  "k": "confirm",
+  "zh": "确定",
+  "en": "OK"
+ },
+ {
+  "mod": "record",
+  "k": "classNotes",
+  "zh": "课堂笔记",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "selectAiSummaryTemplate",
+  "zh": "选择AI总结模板",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "abandonAndExit",
+  "zh": "放弃并退出",
+  "en": "Discard and exit"
+ },
+ {
+  "mod": "record",
+  "k": "filterRoles",
+  "zh": "筛选角色",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "roleBased",
+  "zh": "分角色",
+  "en": "By role"
+ },
+ {
+  "mod": "record",
+  "k": "gotIt",
+  "zh": "知道了",
+  "en": "Got it"
+ },
+ {
+  "mod": "record",
+  "k": "convertingToText",
+  "zh": "正在转文本{0}",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "voiceEnhancementDescription",
+  "zh": "录音时播放会凸显人声， 降低环境噪音。",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "confirmDeleteMarker",
+  "zh": "确定删除此标记吗",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "exportToWord",
+  "zh": "导出为Word",
+  "en": "Export as Word"
+ },
+ {
+  "mod": "record",
+  "k": "fileLocation",
+  "zh": "位置：{0}",
+  "en": "Location:  {0}"
+ },
+ {
+  "mod": "record",
+  "k": "fileType",
+  "zh": "类型：{0}",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "renameFailedSpacesOnly",
+  "zh": "修改失败，文件名不为纯空格",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "renameFailedEmpty",
+  "zh": "修改失败，文件名不能为空",
+  "en": "Failed to modify. The filename cannot be empty"
+ },
+ {
+  "mod": "record",
+  "k": "filenameInvalidChars",
+  "zh": "文件名不能包含下列任何字符：回车符，\\,/,:,*.?,<,>,|",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "reName",
+  "zh": "重命名",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "smartNaming",
+  "zh": "录音智能命名",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "sortCreateTimeNewToOld",
+  "zh": "按创建时间：新到旧",
+  "en": "By created (newest first)"
+ },
+ {
+  "mod": "record",
+  "k": "lastUsed",
+  "zh": "上次使用",
+  "en": "Last used"
+ },
+ {
+  "mod": "record",
+  "k": "aiSummaryFailedInsufficientContent",
+  "zh": "录音内容较少，AI总结生成失败",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "continueGenerating",
+  "zh": "继续进行",
+  "en": "Continue"
+ },
+ {
+  "mod": "record",
+  "k": "abandonAiSummaryPrompt",
+  "zh": "AI总结正在进行中，是否放弃生成的内容？",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "saveHideAiSummary",
+  "zh": "保存后不再展示AI总结内容",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "saveChangesPrompt",
+  "zh": "是否保存修改？",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "copy",
+  "zh": "复制",
+  "en": "Copy"
+ },
+ {
+  "mod": "record",
+  "k": "globalReplace",
+  "zh": "全局替换",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "modifyName",
+  "zh": "修改名称",
+  "en": "Change name"
+ },
+ {
+  "mod": "record",
+  "k": "convertToTextFailed",
+  "zh": "转文本失败",
+  "en": "Transcription failed"
+ },
+ {
+  "mod": "record",
+  "k": "systemDefault",
+  "zh": "系统默认（{0}）",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "markerNumber",
+  "zh": "标记{0}",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "skipSilence",
+  "zh": "跳过静音片段",
+  "en": "Skip silent segments"
+ },
+ {
+  "mod": "record",
+  "k": "playbackSettings",
+  "zh": "播放设置",
+  "en": "Playback settings"
+ },
+ {
+  "mod": "record",
+  "k": "clickConvertToText",
+  "zh": "点击“转文本”开启录音转写",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "findInCurrentRecording",
+  "zh": "在当前录音转文本查找",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "find",
+  "zh": "查找",
+  "en": "Find"
+ },
+ {
+  "mod": "record",
+  "k": "serviceErrorRetryLater",
+  "zh": "服务异常，请稍后再试",
+  "en": "Service error. Try again later"
+ },
+ {
+  "mod": "record",
+  "k": "more",
+  "zh": "更多",
+  "en": "More"
+ },
+ {
+  "mod": "record",
+  "k": "audio",
+  "zh": "音频",
+  "en": "Audio"
+ },
+ {
+  "mod": "record",
+  "k": "interviewSummary",
+  "zh": "访谈总计",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "lectureRecord",
+  "zh": "讲座记录",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "smartNamingInProgress",
+  "zh": "正在智能命名",
+  "en": "Smart naming in progress"
+ },
+ {
+  "mod": "record",
+  "k": "renameFailedExists",
+  "zh": "修改失败，文件名已存在",
+  "en": "Failed to modify. The filename already exists"
+ },
+ {
+  "mod": "record",
+  "k": "filenameTooLong",
+  "zh": "文件名过长",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "recentlyDeleted",
+  "zh": "最近删除",
+  "en": "Recently deleted"
+ },
+ {
+  "mod": "record",
+  "k": "caseSensitive",
+  "zh": "区分字母大小写",
+  "en": "Case-sensitive"
+ },
+ {
+  "mod": "record",
+  "k": "networkError",
+  "zh": "网络异常",
+  "en": "Network error"
+ },
+ {
+  "mod": "record",
+  "k": "backToAiSummary",
+  "zh": "（{0}/{1}）回到AI总结",
+  "en": "({0}/{1}) Return to AI Summary"
+ },
+ {
+  "mod": "record",
+  "k": "callSummary",
+  "zh": "通话总结",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "startGenerating",
+  "zh": "开始生成",
+  "en": "Start generation"
+ },
+ {
+  "mod": "record",
+  "k": "specifySpeak",
+  "zh": "基于选中说话人的内容生成AI总结。",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "abandon",
+  "zh": "放弃",
+  "en": "Discard"
+ },
+ {
+  "mod": "record",
+  "k": "cut",
+  "zh": "剪切",
+  "en": "Cut"
+ },
+ {
+  "mod": "record",
+  "k": "noTextContent",
+  "zh": "无文本内容",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "max4HoursSupported",
+  "zh": "最多支持4小时录音。",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "originalText",
+  "zh": "原文",
+  "en": "Source text"
+ },
+ {
+  "mod": "record",
+  "k": "loopPlayback",
+  "zh": "循环播放",
+  "en": "Loop"
+ },
+ {
+  "mod": "record",
+  "k": "cancel",
+  "zh": "取消",
+  "en": "Cancel"
+ },
+ {
+  "mod": "record",
+  "k": "exportAudio",
+  "zh": "导出音频",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "exportOriginal",
+  "zh": "导出原文",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "exportOrganize",
+  "zh": "导出文本整理",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "exportInsight",
+  "zh": "导出洞察",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "exportSummary",
+  "zh": "导出总结",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "export_original",
+  "zh": "原文",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "export_insight",
+  "zh": "洞察",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "export_summary",
+  "zh": "总结",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "clip",
+  "zh": "剪辑",
+  "en": "Trim"
+ },
+ {
+  "mod": "record",
+  "k": "importAudio",
+  "zh": "导入音频",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "app",
+  "zh": "应用",
+  "en": "App"
+ },
+ {
+  "mod": "record",
+  "k": "recorder",
+  "zh": "录音机",
+  "en": "Recorder"
+ },
+ {
+  "mod": "record",
+  "k": "sortNameAToZ",
+  "zh": "按名称：A到Z",
+  "en": "By name (A–Z)"
+ },
+ {
+  "mod": "record",
+  "k": "saveRecordingPrompt",
+  "zh": "是否保存此录音？",
+  "en": "Save this recording?"
+ },
+ {
+  "mod": "record",
+  "k": "replaceWith",
+  "zh": "替换为",
+  "en": "Replace with"
+ },
+ {
+  "mod": "record",
+  "k": "generationErrorCannotOutput",
+  "zh": "抱歉，生成异常，暂时无法输出。",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "serviceBusyRetryLater",
+  "zh": "服务繁忙，请稍后再试",
+  "en": "Service is busy. Try again later"
+ },
+ {
+  "mod": "record",
+  "k": "stopAssociation",
+  "zh": "停止关联",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "textFormatting",
+  "zh": "语篇规整",
+  "en": "Textual coherence"
+ },
+ {
+  "mod": "record",
+  "k": "meetingSummary",
+  "zh": "会议总结",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "generalTemplate",
+  "zh": "通用模板",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "confirmInsert",
+  "zh": "确认插入",
+  "en": "Insert"
+ },
+ {
+  "mod": "record",
+  "k": "save",
+  "zh": "保存",
+  "en": "Save"
+ },
+ {
+  "mod": "record",
+  "k": "speakerNumber",
+  "zh": "说话人{0}",
+  "en": "Speaker {0}"
+ },
+ {
+  "mod": "record",
+  "k": "singleRecordingOnly",
+  "zh": "仅对单条录音生效",
+  "en": "Works for a single recording only"
+ },
+ {
+  "mod": "record",
+  "k": "exportToPlainText",
+  "zh": "导出为纯文本",
+  "en": "Export as text"
+ },
+ {
+  "mod": "record",
+  "k": "viewLargeImage",
+  "zh": "查看大图",
+  "en": "View large image"
+ },
+ {
+  "mod": "record",
+  "k": "exportText",
+  "zh": "导出文本",
+  "en": "Export text"
+ },
+ {
+  "mod": "record",
+  "k": "aiSummary",
+  "zh": "AI总结",
+  "en": "AI Summary"
+ },
+ {
+  "mod": "record",
+  "k": "modifiedTime",
+  "zh": "修改时间：{0}",
+  "en": "Modified: {0}"
+ },
+ {
+  "mod": "record",
+  "k": "fileSize",
+  "zh": "大小：{0}",
+  "en": "Size: {0}"
+ },
+ {
+  "mod": "record",
+  "k": "startRecording",
+  "zh": "开始录音",
+  "en": ""
+ },
+ {
+  "mod": "record",
+  "k": "phone",
+  "zh": "电话",
+  "en": "Phone"
+ },
+ {
+  "mod": "record",
+  "k": "all",
+  "zh": "全部",
+  "en": "All"
+ },
+ {
+  "mod": "record",
+  "k": "sortCreateTimeOldToNew",
+  "zh": "按创建时间：旧到新",
+  "en": "By created (oldest first)"
+ },
+ {
+  "mod": "record",
+  "k": "recycleBinRetention30Days1New",
+  "zh": "已删除文件仅保留30天，逾期将永久删除。",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recordNo",
+  "zh": "无录音",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recordNotTelephone",
+  "zh": "无电话录音",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recordNotApplication",
+  "zh": "无应用通话录音",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recoverBtn",
+  "zh": "恢复",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "permanentlyDelete",
+  "zh": "永久删除",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "permanentlyRecordDel",
+  "zh": "永久删除此录音文件吗？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "permanentlyRecordDels",
+  "zh": "永久删除{0}个录音文件吗？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recordAiTemplate",
+  "zh": "选择AI总结模版",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recordTemlateGenerate",
+  "zh": "开始生成",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recordAiTemplateSpeaker",
+  "zh": "指定说话人",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recordAiTemplateSummary",
+  "zh": "基于选中说话人的内容生成AI总结。",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "photoMark",
+  "zh": "图片备注",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "previewBigPhoto",
+  "zh": "查看大图",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "replacePhoto",
+  "zh": "替换图片",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "forwordSecond",
+  "zh": "前进{0}s",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "backSecond",
+  "zh": "后退{0}s",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "play",
+  "zh": "播放",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "pause",
+  "zh": "暂停",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "mark",
+  "zh": "标记",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "markList",
+  "zh": "标记列表",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "playSetting",
+  "zh": "播放设置",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "jumpMarkTime",
+  "zh": "跳转标记时间点",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "markPlaceholder",
+  "zh": "标记名称",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "quickMarkPlaceholder",
+  "zh": "输入内容",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "textMarkPlaceholder",
+  "zh": "记录此刻",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "stopAiMark",
+  "zh": "停止生成",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "aiMark",
+  "zh": "标记智能命名",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "deleteMark",
+  "zh": "删除标记",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "deleteMarkConfirmTitle",
+  "zh": "删除此标记吗？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "playSettingInfo",
+  "zh": "仅对单条录音生效",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "playSpeed",
+  "zh": "播放速度",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "skipSilent",
+  "zh": "跳过静音片段",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "loopPlay",
+  "zh": "循环播放",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "removeMultiNoteFromCloudTitle",
+  "zh": "从{0}中删除{1}个文件？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "deleteSingleNoteFromCloudTitle",
+  "zh": "从{0}中删除此录音文件？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "FvMoveToRecentDeleteNotice",
+  "zh": "所选录音文件将在“最近删除”保留30天。",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "FvMoveToRecentDeleteOneNotice",
+  "zh": "此录音文件将在“最近删除”保留30天。",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "removeMultiRecordTitle",
+  "zh": "确定删除所选{0}个录音文件吗？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "removeSingleRecordTitle",
+  "zh": "确定删除此录音文件吗？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "waitAiRename",
+  "zh": "等待智能命名",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "isAiRenameing",
+  "zh": "正在智能命名",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "removeMultiRecordRecentlyTitle",
+  "zh": "永久删除所选{0}个录音文件吗？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "removeSingleRecordRecentlyTitle",
+  "zh": "永久删除此录音文件吗？",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "hideSpeakerTimestamp",
+  "zh": "不显示说话人及时间戳",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "showSpeakerTimestamp",
+  "zh": "显示说话人及时间戳",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "searchScopeCurrent",
+  "zh": "当前页签",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "searchScopeAll",
+  "zh": "全部页签",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "searchInCurrentTab",
+  "zh": "在当前录音内查找",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "searchInAllTabs",
+  "zh": "在当前录音内查找",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "insightNoReplace",
+  "zh": "洞察不支持替换",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "tabNameMark",
+  "zh": "标记",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "tabNameText",
+  "zh": "转写",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "tabNameInsight",
+  "zh": "洞察",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "tabNameSummary",
+  "zh": "总结",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "permanentDeleting",
+  "zh": "正在永久删除...",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "recovering",
+  "zh": "正在恢复...",
+  "en": null
+ },
+ {
+  "mod": "record",
+  "k": "deleting",
+  "zh": "正在删除...",
+  "en": null
+ }
+]

@@ -1,0 +1,18 @@
+{
+  "name": "vivo-office-kit-es",
+  "version": "1.0.0",
+  "description": "Parche de traducción al español para vivo办公套件 (vivo Office Kit, versión china) en Windows",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "instalar": "node instalar.js",
+    "restaurar": "node restaurar.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "acorn": "8.12.1",
+    "acorn-walk": "8.3.4"
+  }
+}
