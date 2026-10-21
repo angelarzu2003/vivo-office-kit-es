@@ -39,19 +39,20 @@ Las actualizaciones de vivo reemplazan el archivo traducido y la app vuelve a es
 
 ## Solución de problemas
 
-**"Estructura de la app no reconocida (falta el editor TinyMCE)"**
-Este error lo daba la versión 1.0.0 del parche con versiones de la app distintas de la 7.0.6. Descarga la versión más reciente de este repositorio.
+Consulta la guía completa: **[PROBLEMAS.md](PROBLEMAS.md)**. Incluye cada mensaje de error del instalador, problemas después de instalar, conexión con el teléfono y cómo reportar fallos.
 
-**No descargues ni copies ninguna carpeta `tinymce`.** El editor ya viene dentro de la app, en `resources\app.asar`, y el instalador solo trabaja con ese archivo. Si copiaste una carpeta `tinymce` dentro de la carpeta de la app (por ejemplo en `resources`), bórrala: no sirve para nada.
+Los casos más frecuentes:
 
-**"no se encontró la función del idioma por defecto (versión no compatible)"**
-Tu versión de la app tiene un código distinto a las probadas. Abre un *issue* indicando la versión que muestra el instalador. Mientras tanto, actualizar la app a la versión 7.0.6 lo soluciona.
-
-**"Sin permiso para escribir en la carpeta de la app"**
-Ejecuta `instalar.bat` con clic derecho > **Ejecutar como administrador**.
-
-**"vivo办公套件 está en ejecución"**
-Cierra la app desde el icono junto al reloj (clic derecho > Salir).
+| Problema | Solución rápida |
+|---|---|
+| La ventana se cierra al instante | Descomprime el ZIP antes de ejecutar `instalar.bat` |
+| "No se encontro Node.js" | Instala Node.js LTS y reinicia el PC |
+| "Sin permiso para escribir" | Clic derecho en `instalar.bat` > Ejecutar como administrador |
+| "está en ejecución" | Cierra la app desde el icono junto al reloj > Salir |
+| "falta el editor TinyMCE" | Descarga la versión más reciente del parche. **No copies carpetas `tinymce`** |
+| "No se encontró vivo办公套件 en el registro" | Arrastra la carpeta que contiene `pcsuite.exe` encima de `instalar.bat` |
+| La app volvió a estar en chino | vivo la actualizó: vuelve a ejecutar `instalar.bat` |
+| No conecta por Wi-Fi en una red pública | La red aísla los dispositivos: usa USB, Bluetooth o la red de casa |
 
 ## Cómo funciona
 
