@@ -87,19 +87,32 @@ function setPath(obj, key, val) {
 }
 
 // ---------- 3. Ventanas (renderer / child-window / module-share-preview) ----------
+// Hay dos variantes de código según la versión:
+//  A (7.x):   function o(){if(!n)return"zh_CN";...}  y  locale:n?o():"zh_CN", fallbackLocale:n?"en_US":"zh_CN"
+//  B (6.8.x): function r(){return"zh_CN"}            y  {locale:"zh_CN",fallbackLocale:"zh_CN",...};t.i18nReady=c("zh_CN")
 for (const f of ['renderer.js', 'child-window.js', 'module-share-preview.js']) {
   const rel = `dist/electron/${f}`;
+  if (!fs.existsSync(path.join(appDir, rel))) continue; // ventana inexistente en esta versión
   let src = fs.readFileSync(srcOf(rel), 'utf8');
+  let variante = null;
+
   // Idioma por defecto de la versión china: zh_CN -> es_US
-  src = src.replace(/(function \w\(\)\{if\(!\w\)return)"zh_CN"(;)/, (m, a, b) => {
-    return a + `"${LANG}"` + b;
-  });
-  if (!src.includes(`return"${LANG}";const`)) throw new Error(f + ': getDefaultLanguage no parcheado');
-  // Locale inicial y de respaldo de vue-i18n
+  const reA1 = /(function \w\(\)\{if\(!\w\)return)"zh_CN"(;)/;
+  const reB1 = /(function \w\(\)\{return)"zh_CN"(\}function \w\(\)\{let \w=Intl\.DateTimeFormat)/;
+  if (reA1.test(src)) { src = src.replace(reA1, `$1"${LANG}"$2`); variante = 'A'; }
+  else if (reB1.test(src)) { src = src.replace(reB1, `$1"${LANG}"$2`); variante = 'B'; }
+  else throw new Error(f + ': no se encontró la función del idioma por defecto (versión no compatible)');
+
+  // Idioma inicial y de respaldo de vue-i18n
   const before = src;
-  src = src.replace(/const (\w)=(\w)\?(\w)\(\):"zh_CN",(\w)=new (\w)\.default\(\{locale:\1,fallbackLocale:\2\?"en_US":"zh_CN"/,
-    (m, c, n, o, d, b) => `const ${c}=${o}(),${d}=new ${b}.default({locale:${c},fallbackLocale:"en_US"`);
-  if (src === before) throw new Error(f + ': inicialización de i18n no parcheada');
+  if (variante === 'A') {
+    src = src.replace(/const (\w)=(\w)\?(\w)\(\):"zh_CN",(\w)=new (\w)\.default\(\{locale:\1,fallbackLocale:\2\?"en_US":"zh_CN"/,
+      (m, c, n, o, d, b) => `const ${c}=${o}(),${d}=new ${b}.default({locale:${c},fallbackLocale:"en_US"`);
+  } else {
+    src = src.replace(/\{locale:"zh_CN",fallbackLocale:"zh_CN",messages:\{\}\}\);(\w)\.i18nReady=(\w)\("zh_CN"\)/,
+      (m, t, c) => `{locale:"${LANG}",fallbackLocale:"en_US",messages:{}});${t}.i18nReady=${c}("${LANG}")`);
+  }
+  if (src === before) throw new Error(f + ': no se encontró la inicialización de i18n (versión no compatible)');
   out(rel, src);
 }
 
@@ -108,10 +121,12 @@ for (const f of ['renderer.js', 'child-window.js', 'module-share-preview.js']) {
   const rel = 'dist/electron/main.js';
   let src = fs.readFileSync(srcOf(rel), 'utf8');
   // handleExEnv: al cambiar a versión china se forzaba zh_CN; además ahora se fuerza es_US siempre
-  src = replaceExact(src,
-    'o.default.setItem("isExport",g),g||(o.default.setItem("currentLanguage","zh_CN"),o.default.setItem("vLang","vzh_rCN"),o.default.setItem("isRtl",!1)))}',
-    `o.default.setItem("isExport",g)),g||(o.default.setItem("currentLanguage","${LANG}"),o.default.setItem("vLang","${VLANG}"),o.default.setItem("isRtl",!1))}`,
-    1, 'handleExEnv');
+  const setEs = `o.default.setItem("currentLanguage","${LANG}"),o.default.setItem("vLang","${VLANG}"),o.default.setItem("isRtl",!1)`;
+  const exA = 'o.default.setItem("isExport",g),g||(o.default.setItem("currentLanguage","zh_CN"),o.default.setItem("vLang","vzh_rCN"),o.default.setItem("isRtl",!1)))}';
+  const exB = 'o.default.setItem("isExport",!1),o.default.setItem("currentLanguage","zh_CN"),o.default.setItem("vLang","vzh_rCN"),o.default.setItem("isRtl",!1))}';
+  if (src.includes(exA)) src = replaceExact(src, exA, `o.default.setItem("isExport",g)),g||(${setEs})}`, 1, 'handleExEnv');
+  else if (src.includes(exB)) src = replaceExact(src, exB, `o.default.setItem("isExport",!1)),${setEs}}`, 1, 'handleExEnv');
+  else throw new Error('main.js: no se encontró handleExEnv (versión no compatible)');
   // RtlManager: idioma por defecto
   src = replaceExact(src, 'this._isRtl=!1,this._currentLanguage="zh_CN"}', `this._isRtl=!1,this._currentLanguage="${LANG}"}`, 1, 'RtlManager');
   out(rel, src);
@@ -119,4 +134,4 @@ for (const f of ['renderer.js', 'child-window.js', 'module-share-preview.js']) {
 
 // Copiar el resto de bundles traducidos
 if (uiDir) for (const f of fs.readdirSync(uiDir)) { const rel = 'dist/electron/' + f; if (!written.includes(rel)) out(rel, fs.readFileSync(path.join(uiDir, f))); }
-console.log('Archivos generados:\n  ' + written.join('\n  '));
+console.log(`  ${written.length} archivos modificados`);

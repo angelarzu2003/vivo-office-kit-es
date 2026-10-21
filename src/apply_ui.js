@@ -18,6 +18,13 @@ for (const f of trFiles.split(',')) {
     byValue.set(v, t);
   }
 }
+// Índice por texto sin espacios en los bordes: otras versiones de la app cambian la indentación de las plantillas
+const byTrim = new Map();
+for (const [v, t] of byValue) if (!byTrim.has(v.trim())) byTrim.set(v.trim(), t);
+const lookup = v => (byValue.has(v) ? byValue.get(v) : byTrim.get(v.trim()));
+// Valores comparados con datos externos: nunca se traducen
+const PROT = new Set((ui.protected || []).map(v => v.trim()));
+const hasTr = v => byValue.has(v) || byTrim.has(v.trim());
 
 // Conserva los espacios/saltos de línea iniciales y finales del original
 function withWs(orig, t) {
@@ -46,10 +53,10 @@ for (const file of allFiles) {
   const ranges = [];
   for (const r of RULES) for (const m of src.matchAll(r.re)) ranges.push([m.index, m.index + m[0].length]);
   const inRule = it => ranges.some(([a, b]) => it.s >= a && it.e <= b);
-  const todo = items.filter(it => byValue.has(it.v) && !inRule(it)).sort((a, b) => b.s - a.s);
+  const todo = items.filter(it => hasTr(it.v) && !PROT.has(it.v.trim()) && !inRule(it)).sort((a, b) => b.s - a.s);
   if (!todo.length && !ranges.length) continue;
   for (const it of todo) {
-    const t = withWs(it.v, byValue.get(it.v));
+    const t = withWs(it.v, lookup(it.v));
     const raw = src.slice(it.s, it.e);
     let rep;
     if (it.k === 'lit') {

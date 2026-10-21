@@ -2914,5 +2914,11 @@
   "k": "deleting",
   "zh": "正在删除...",
   "en": null
+ },
+ {
+  "mod": "connection",
+  "k": "ping-ban",
+  "zh": "平板",
+  "en": "Tablet"
  }
 ]

@@ -1,7 +1,7 @@
 {
   "name": "vivo-office-kit-es",
-  "version": "1.0.0",
-  "description": "Parche de traducción al español para vivo办公套件 (vivo Office Kit, versión china) en Windows",
+  "version": "1.1.0",
+  "description": "Parche de traducción al español para vivo办公套件 (vivo Office Kit, versión china) en Windows (6.8.2 y 7.0.6)",
   "private": true,
   "license": "MIT",
   "scripts": {

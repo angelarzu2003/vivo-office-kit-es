@@ -3,17 +3,18 @@
 // La carpeta es la que contiene pcsuite.exe. Si no se indica, se busca en el registro de Windows.
 const fs = require('fs');
 const os = require('os');
+const crypto = require('crypto');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
 const SRC = path.join(__dirname, 'src');
 const TR = path.join(__dirname, 'traducciones');
-const VERSION_PROBADA = '7.0.6';
+const VERSIONES_PROBADAS = ['6.8.2', '7.0.6'];
 
 function paso(n, total, msg) { console.log(`\n[${n}/${total}] ${msg}`); }
 function fallo(msg) { console.error(`\nERROR: ${msg}\n`); process.exit(1); }
 function node(script, args, opts = {}) {
-  execFileSync(process.execPath, ['--max-old-space-size=8192', path.join(SRC, script), ...args], { stdio: opts.quiet ? 'ignore' : 'inherit' });
+  execFileSync(process.execPath, ['--max-old-space-size=8192', path.join(SRC, script), ...args], { stdio: opts.quiet ? ['ignore', 'ignore', 'inherit'] : 'inherit' });
 }
 
 // ---------- Localizar la instalación ----------
@@ -60,37 +61,81 @@ const TOTAL = 8;
 const trabajo = fs.mkdtempSync(path.join(os.tmpdir(), 'vivo-es-'));
 const app = path.join(trabajo, 'app');
 const E = path.join(app, 'dist', 'electron');
-const T = path.join(E, 'static', 'tinymce', '202609111200');
+// Registro de la última instalación: permite detectar si vivo actualizó la app
+const estado = path.join(resources, 'app.asar.vivo-es.json');
+
+function sha256(archivo) {
+  const h = crypto.createHash('sha256');
+  const fd = fs.openSync(archivo, 'r');
+  const buf = Buffer.alloc(8 * 1024 * 1024);
+  let n;
+  while ((n = fs.readSync(fd, buf, 0, buf.length, null)) > 0) h.update(buf.subarray(0, n));
+  fs.closeSync(fd);
+  return h.digest('hex');
+}
+
+// La carpeta del editor lleva la fecha de compilación en el nombre (p. ej. 202609111200) y cambia en cada versión
+function carpetaTinymce() {
+  const base = path.join(E, 'static', 'tinymce');
+  if (!fs.existsSync(base)) return null;
+  const candidatas = fs.readdirSync(base).filter(d => fs.existsSync(path.join(base, d, 'plugins'))).sort();
+  return candidatas.length ? path.join(base, candidatas[candidatas.length - 1]) : null;
+}
 
 try {
   // Siempre se parte del original, así el instalador se puede ejecutar varias veces
   paso(1, TOTAL, 'Copia de seguridad del original');
-  if (!fs.existsSync(original)) { fs.copyFileSync(asar, original); console.log(`  Guardada en ${original}`); }
-  else console.log('  Ya existe app.asar.original; se usará como base.');
+  const hashActual = sha256(asar);
+  const previo = fs.existsSync(estado) ? JSON.parse(fs.readFileSync(estado, 'utf8')) : null;
+  if (!fs.existsSync(original)) {
+    fs.copyFileSync(asar, original);
+    console.log(`  Guardada en ${original}`);
+  } else if (previo && hashActual === previo.parcheado) {
+    console.log('  La app ya tenía este parche; se rehace a partir del original guardado.');
+  } else if (hashActual === sha256(original)) {
+    console.log('  Ya existe app.asar.original; se usará como base.');
+  } else {
+    // app.asar no es ni el original guardado ni nuestro parche: vivo actualizó la app
+    fs.copyFileSync(asar, original);
+    console.log('  Se detectó una actualización de la app: se renovó la copia de seguridad.');
+  }
 
   paso(2, TOTAL, 'Extrayendo la aplicación (puede tardar 1-2 minutos)');
   node('asar_extract.js', [original, app], { quiet: true });
   const version = JSON.parse(fs.readFileSync(path.join(app, 'package.json'), 'utf8')).version;
   console.log(`  Versión de la app: ${version}`);
-  if (version !== VERSION_PROBADA) console.log(`  AVISO: el parche se probó con la versión ${VERSION_PROBADA}. Puede que algunos textos queden sin traducir.`);
-  if (!fs.existsSync(T)) fallo('Estructura de la app no reconocida (falta el editor TinyMCE). Esta versión no es compatible.');
+  if (!VERSIONES_PROBADAS.includes(version)) console.log(`  AVISO: el parche se probó con las versiones ${VERSIONES_PROBADAS.join(', ')}. Puede que algunos textos queden sin traducir.`);
+  if (!fs.existsSync(path.join(E, 'main.js'))) throw new Error('Estructura de la app no reconocida (falta dist/electron/main.js). Esta versión no es compatible.');
+  const T = carpetaTinymce();
+  if (!T) console.log('  AVISO: no se encontró el editor de notas (TinyMCE); se omitirá su traducción.');
 
   paso(3, TOTAL, 'Analizando los textos de la interfaz');
   node('extract_ui.js', [E, path.join(trabajo, 'ui_strings.json')], { quiet: true });
-  const plugins = fs.readdirSync(path.join(T, 'plugins')).map(p => `plugins/${p}/plugin.min.js`).filter(f => fs.existsSync(path.join(T, f)));
-  node('extract_ui.js', [T, path.join(trabajo, 'ui_tiny.json'), ...plugins], { quiet: true });
+  let plugins = [];
+  if (T) {
+    plugins = fs.readdirSync(path.join(T, 'plugins')).map(p => `plugins/${p}/plugin.min.js`).filter(f => fs.existsSync(path.join(T, f)));
+    node('extract_ui.js', [T, path.join(trabajo, 'ui_tiny.json'), ...plugins], { quiet: true });
+  }
 
-  const tr = ['traduccion_ui.json', 'traduccion_extra.json', 'traduccion_tiny.json'].map(f => path.join(TR, f)).join(',');
+  const tr = ['traduccion_v6.json', 'traduccion_ui.json', 'traduccion_extra.json', 'traduccion_tiny.json'].map(f => path.join(TR, f)).join(',');
   paso(4, TOTAL, 'Traduciendo la interfaz');
   node('apply_ui.js', [E, path.join(trabajo, 'ui_strings.json'), tr, path.join(trabajo, 'out_ui')]);
 
   paso(5, TOTAL, 'Traduciendo el editor de notas');
-  node('apply_ui.js', [T, path.join(trabajo, 'ui_tiny.json'), tr, path.join(trabajo, 'out_tiny')]);
+  if (T) node('apply_ui.js', [T, path.join(trabajo, 'ui_tiny.json'), tr, path.join(trabajo, 'out_tiny')]);
+  else console.log('  Omitido.');
 
   paso(6, TOTAL, 'Activando el idioma español');
   const parche = path.join(trabajo, 'parche');
-  node('patch_es.js', [app, parche, path.join(trabajo, 'out_ui')], { quiet: true });
-  fs.cpSync(path.join(trabajo, 'out_tiny'), path.join(parche, 'dist', 'electron', 'static', 'tinymce', '202609111200'), { recursive: true });
+  node('patch_es.js', [app, parche, path.join(trabajo, 'out_ui')]);
+  if (T) fs.cpSync(path.join(trabajo, 'out_tiny'), path.join(parche, path.relative(app, T)), { recursive: true });
+
+  // Verificación: todo el JavaScript modificado debe tener sintaxis válida
+  const listar = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(x => x.isDirectory() ? listar(path.join(d, x.name)) : [path.join(d, x.name)]);
+  for (const f of listar(parche).filter(f => f.endsWith('.js'))) {
+    try { execFileSync(process.execPath, ['--check', f], { stdio: 'ignore' }); }
+    catch { throw new Error(`El archivo modificado ${path.relative(parche, f)} no es válido; se cancela la instalación.`); }
+  }
 
   paso(7, TOTAL, 'Reempaquetando');
   const nuevo = path.join(trabajo, 'app_es.asar');
@@ -98,6 +143,7 @@ try {
 
   paso(8, TOTAL, 'Instalando');
   fs.copyFileSync(nuevo, asar);
+  fs.writeFileSync(estado, JSON.stringify({ version, original: sha256(original), parcheado: sha256(asar), fecha: new Date().toISOString() }, null, 2));
   console.log('\nListo. Abra vivo办公套件: ahora debería mostrarse en español.');
   console.log('Para deshacer los cambios, ejecute restaurar.bat.');
 } catch (e) {

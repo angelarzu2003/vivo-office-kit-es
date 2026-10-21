@@ -9,7 +9,7 @@ La versión china de la app trae traducción al español, pero la tiene bloquead
 ## Requisitos
 
 - Windows 10 u 11
-- **vivo办公套件 7.0.6** instalado (versión probada; con otras versiones puede funcionar parcialmente)
+- **vivo办公套件 6.8.2 o 7.0.6** instalado (versiones probadas; con otras puede funcionar parcialmente)
 - [Node.js](https://nodejs.org) versión LTS (18 o superior)
 - Unos 1,5 GB libres en el disco del sistema (se usan de forma temporal)
 
@@ -35,16 +35,29 @@ Haz doble clic en **`restaurar.bat`**. Restaura el archivo original, que el inst
 
 ## Si la app se actualiza
 
-Las actualizaciones de vivo reemplazan el archivo traducido y la app vuelve a estar en chino. Haz lo siguiente:
+Las actualizaciones de vivo reemplazan el archivo traducido y la app vuelve a estar en chino. Solo tienes que volver a ejecutar `instalar.bat`: detecta la actualización, renueva la copia de seguridad y traduce la versión nueva.
 
-1. Borra `resources\app.asar.original`, que pertenece a la versión anterior.
-2. Vuelve a ejecutar `instalar.bat`.
+## Solución de problemas
+
+**"Estructura de la app no reconocida (falta el editor TinyMCE)"**
+Este error lo daba la versión 1.0.0 del parche con versiones de la app distintas de la 7.0.6. Descarga la versión más reciente de este repositorio.
+
+**No descargues ni copies ninguna carpeta `tinymce`.** El editor ya viene dentro de la app, en `resources\app.asar`, y el instalador solo trabaja con ese archivo. Si copiaste una carpeta `tinymce` dentro de la carpeta de la app (por ejemplo en `resources`), bórrala: no sirve para nada.
+
+**"no se encontró la función del idioma por defecto (versión no compatible)"**
+Tu versión de la app tiene un código distinto a las probadas. Abre un *issue* indicando la versión que muestra el instalador. Mientras tanto, actualizar la app a la versión 7.0.6 lo soluciona.
+
+**"Sin permiso para escribir en la carpeta de la app"**
+Ejecuta `instalar.bat` con clic derecho > **Ejecutar como administrador**.
+
+**"vivo办公套件 está en ejecución"**
+Cierra la app desde el icono junto al reloj (clic derecho > Salir).
 
 ## Cómo funciona
 
 La interfaz de la app está hecha con Electron, y su código vive en `resources\app.asar`. El instalador sigue estos pasos:
 
-1. **Guarda una copia** del `app.asar` original y trabaja siempre sobre ella, así que se puede ejecutar varias veces.
+1. **Guarda una copia** del `app.asar` original y trabaja siempre sobre ella, así que se puede ejecutar varias veces. En `resources\app.asar.vivo-es.json` registra los hashes de lo instalado; así detecta si vivo actualizó la app.
 2. **Extrae** el `app.asar` en una carpeta temporal.
 3. **Activa el español**: cambia el idioma bloqueado (`zh_CN`) por `es_US` y completa las 486 claves que faltaban en la traducción oficial de vivo.
 4. **Traduce los textos escritos directamente en el código.** Analiza el JavaScript con un analizador sintáctico (acorn) y sustituye solo los textos visibles. No toca los registros internos, las comparaciones con datos del teléfono o del servidor, las rutas de carpetas ni las consultas a la base de datos.
@@ -64,7 +77,7 @@ La interfaz de la app está hecha con Electron, y su código vive en `resources\
 | `src/rules.js` | Reglas para frases compuestas por piezas |
 | `src/allow.json` | Etiquetas internas que se traducen de forma uniforme |
 | `src/patch_es.js` | Activa el idioma español |
-| `traducciones/*.json` | Las traducciones (texto chino → español) |
+| `traducciones/*.json` | Las traducciones (texto chino → español); `traduccion_v6.json` contiene los textos exclusivos de la 6.8.x |
 
 ## Limitaciones conocidas
 
